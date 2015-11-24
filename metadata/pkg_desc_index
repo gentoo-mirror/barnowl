@@ -1,8 +1,8 @@
-dev-perl/AnyEvent-IRC 0.97: An event based IRC protocol client API
-dev-perl/MIME-Base64-URLSafe 0.01: Perl version of Python's URL-safe base64 codec
-dev-perl/Net-Twitter-Lite 0.12006: A perl interface to the Twitter API
-dev-perl/Object-Event 1.23: A class that provides an event callback interface
-dev-perl/Ouch 0.0408: Exceptions that don't hurt
-dev-perl/URI-Encode 0.09: Simple percent Encoding/Decoding
+dev-perl/AnyEvent-IRC 0.97: 
+dev-perl/MIME-Base64-URLSafe 0.01: 
+dev-perl/Net-Twitter-Lite 0.12006: 
+dev-perl/Object-Event 1.23: 
+dev-perl/Ouch 0.0408: 
+dev-perl/URI-Encode 0.09: 
 net-im/barnowl 1.8 1.9: A curses-based IM client
 net-im/zephyr 3.0.1: The Project Athena instant messaging system
