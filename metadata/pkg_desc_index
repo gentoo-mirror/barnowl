@@ -4,4 +4,4 @@ dev-perl/Net-Twitter-Lite 0.12006: A perl interface to the Twitter API
 dev-perl/Object-Event 1.23: A class that provides an event callback interface
 dev-perl/Ouch 0.0408: Exceptions that don't hurt
 net-im/barnowl 1.8 1.9 1.9-r1: A curses-based IM client
-net-im/zephyr 3.0.1: The Project Athena instant messaging system
+net-im/zephyr 3.1.2: The Project Athena instant messaging system
