@@ -11,7 +11,7 @@ DESCRIPTION="A perl interface to the Twitter API"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
+DEPEND="dev-perl/Module-Build-Tiny"
 RDEPEND="dev-perl/Crypt-SSLeay
 		 dev-perl/HTTP-Message
 		 dev-perl/JSON

@@ -5,32 +5,25 @@ EAPI=6
 
 inherit autotools
 
-#GIT_TAG=
-#GIT_HASH=
-
 DESCRIPTION="A curses-based IM client"
-HOMEPAGE="http://barnowl.mit.edu/"
-if [ -n "${GIT_TAG}" ] ; then
-	SRC_URI="https://github.com/barnowl/barnowl/tarball/${PN}-${GIT_TAG}
-			   -> ${P}-git.tar.gz"
-else
-	SRC_URI="http://barnowl.mit.edu/dist/${P}-src.tgz"
-fi
+HOMEPAGE="https://barnowl.mit.edu/"
+SRC_URI="https://barnowl.mit.edu/dist/${P}-src.tgz"
 
 SLOT="0"
 LICENSE="Sleepycat LGPL-2"
 KEYWORDS="~amd64 ~x86"
-IUSE="+zephyr facebook irc jabber twitter wordwrap"
+IUSE="+zephyr irc jabber twitter wordwrap"
 
 COMMON_DEPEND="dev-lang/perl:=
 			   dev-libs/openssl:0=
 			   dev-libs/glib:2
 			   sys-libs/ncurses:0=[unicode]
-			   dev-perl/PAR
-			   dev-perl/Class-Accessor
 			   dev-perl/AnyEvent
+			   dev-perl/Class-Accessor
+			   dev-perl/ExtUtils-Depends
 			   dev-perl/glib-perl
 			   dev-perl/Module-Install
+			   dev-perl/PAR
 			   zephyr? ( net-im/zephyr )"
 DEPEND="${COMMON_DEPEND}
 		virtual/pkgconfig
@@ -42,16 +35,16 @@ RDEPEND="${COMMON_DEPEND}
 		 twitter? ( dev-perl/HTML-Parser
 					dev-perl/Net-Twitter-Lite )
 		 irc? ( dev-perl/AnyEvent-IRC )
-		 wordwrap? ( dev-perl/Text-Autoformat )
-		 facebook? ( dev-perl/AnyEvent-HTTP
-					 dev-perl/Any-Moose
-					 dev-perl/DateTime
-					 dev-perl/DateTime-Format-Strptime
-					 dev-perl/JSON
-					 dev-perl/MIME-Base64-URLSafe
-					 dev-perl/Ouch
-					 dev-perl/URI
-					 dev-perl/URI-Encode )"
+		 wordwrap? ( dev-perl/Text-Autoformat )"
+		 # facebook? ( dev-perl/AnyEvent-HTTP
+		 # 			 dev-perl/Any-Moose
+		 # 			 dev-perl/DateTime
+		 # 			 dev-perl/DateTime-Format-Strptime
+		 # 			 dev-perl/JSON
+		 # 			 dev-perl/MIME-Base64-URLSafe
+		 # 			 dev-perl/Ouch
+		 # 			 dev-perl/URI
+		 # 			 dev-perl/URI-Encode )"
 
 # The package contains modified budled versions of the following perl modules:
 # Facebook::Graph (not in portage)
@@ -61,22 +54,7 @@ RDEPEND="${COMMON_DEPEND}
 # I think the package will correctly pick up its bundled versions, but I
 # haven't tested because I don't use any of the modules using them.
 
-if [ -n "${GIT_HASH}" ] ; then
-	S="${WORKDIR}/barnowl-barnowl-${GIT_HASH}"
-else
-	S="${WORKDIR}/${P}-src"
-fi
-
 src_prepare() {
-	# Unbundle unforked libraries.  Upstream has decided bundling them was a
-	# bad idea anyway and is removing the bundled copies in the next version.
-	rm -r perl/modules/Facebook/lib/AnyEvent || die
-	rm perl/modules/Facebook/lib/Ouch.pm || die
-	rm -r perl/modules/Facebook/lib/URI || die
-	# and 5 copies of Module::Install
-	eapply "${FILESDIR}/${P}-system-Module-Install.patch"
-	find . -name inc | xargs rm -r || die
-
 	use jabber || \
 		sed -i -e '/^MODULES =/s/Jabber//'   perl/modules/Makefile.am
 	use irc || \
@@ -85,11 +63,13 @@ src_prepare() {
 		sed -i -e '/^MODULES =/s/WordWrap//' perl/modules/Makefile.am
 	use twitter || \
 		sed -i -e '/^MODULES =/s/Twitter//'  perl/modules/Makefile.am
-	use facebook || \
-		sed -i -e '/^MODULES =/s/Facebook//' perl/modules/Makefile.am
-	eautoreconf
+	# Facbook module is currently broken.
+	#use facebook ||
+	sed -i -e '/^MODULES =/s/Facebook//' perl/modules/Makefile.am
 
 	eapply_user
+
+	eautoreconf
 }
 
 src_configure() {
