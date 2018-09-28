@@ -9,5 +9,5 @@ LICENSE=Sleepycat LGPL-2
 RDEPEND=dev-lang/perl:= dev-libs/openssl:0= dev-libs/glib:2 sys-libs/ncurses:0=[unicode] dev-perl/AnyEvent dev-perl/Class-Accessor dev-perl/ExtUtils-Depends dev-perl/glib-perl dev-perl/Module-Install dev-perl/PAR zephyr? ( net-im/zephyr ) jabber? ( dev-perl/Net-DNS dev-perl/Authen-SASL dev-perl/IO-Socket-SSL ) twitter? ( dev-perl/HTML-Parser dev-perl/Net-Twitter-Lite ) irc? ( dev-perl/AnyEvent-IRC ) wordwrap? ( dev-perl/Text-Autoformat )
 SLOT=0
 SRC_URI=https://barnowl.mit.edu/dist/barnowl-1.10-src.tgz
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	b2f01ad412baf81650c23fcf0975fa33	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
 _md5_=a38f1d96e922bc720a132c14d93ca810
