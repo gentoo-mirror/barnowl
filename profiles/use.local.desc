@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-net-im/barnowl:facebook - Enable Facebook support
 net-im/barnowl:irc - Enable IRC support
 net-im/barnowl:jabber - Enable XMPP support
 net-im/barnowl:twitter - Enable Twitter support
