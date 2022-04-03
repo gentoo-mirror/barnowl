@@ -3,5 +3,5 @@ dev-perl/MIME-Base64-URLSafe 0.01: Perl version of Python's URL-safe base64 code
 dev-perl/Net-Twitter-Lite 0.12006 0.12008: A perl interface to the Twitter API
 dev-perl/Object-Event 1.23: A class that provides an event callback interface
 dev-perl/Ouch 0.0408 0.0410: Exceptions that don't hurt
-net-im/barnowl 1.10_p20190131-r1: A curses-based IM client
+net-im/barnowl 1.10_p20190131-r2: A curses-based IM client
 net-im/zephyr 3.1.2-r1: The Project Athena instant messaging system
