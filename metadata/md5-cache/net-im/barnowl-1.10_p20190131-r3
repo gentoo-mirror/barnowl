@@ -2,14 +2,14 @@ BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/
 DEFINED_PHASES=compile configure install prepare
 DEPEND=dev-lang/perl:= dev-libs/openssl:0= dev-libs/glib:2 sys-libs/ncurses:0= dev-perl/AnyEvent dev-perl/Class-Accessor dev-perl/glib-perl dev-perl/PAR zephyr? ( net-im/zephyr ) virtual/pkgconfig app-arch/zip app-arch/unzip dev-perl/Module-Install dev-perl/ExtUtils-Depends dev-util/glib-utils
 DESCRIPTION=A curses-based IM client
-EAPI=7
+EAPI=8
 HOMEPAGE=https://barnowl.mit.edu/
 INHERIT=autotools
-IUSE=+zephyr irc jabber twitter wordwrap
+IUSE=+zephyr irc jabber wordwrap
 KEYWORDS=~amd64 ~x86
 LICENSE=Sleepycat LGPL-2
-RDEPEND=dev-lang/perl:= dev-libs/openssl:0= dev-libs/glib:2 sys-libs/ncurses:0= dev-perl/AnyEvent dev-perl/Class-Accessor dev-perl/glib-perl dev-perl/PAR zephyr? ( net-im/zephyr ) jabber? ( dev-perl/Net-DNS dev-perl/Authen-SASL dev-perl/IO-Socket-SSL ) twitter? ( dev-perl/HTML-Parser dev-perl/Net-Twitter-Lite ) irc? ( dev-perl/AnyEvent-IRC ) wordwrap? ( dev-perl/Text-Autoformat )
+RDEPEND=dev-lang/perl:= dev-libs/openssl:0= dev-libs/glib:2 sys-libs/ncurses:0= dev-perl/AnyEvent dev-perl/Class-Accessor dev-perl/glib-perl dev-perl/PAR zephyr? ( net-im/zephyr ) jabber? ( dev-perl/Net-DNS dev-perl/Authen-SASL dev-perl/IO-Socket-SSL ) irc? ( dev-perl/AnyEvent-IRC ) wordwrap? ( dev-perl/Text-Autoformat )
 SLOT=0
 SRC_URI=https://github.com/barnowl/barnowl/archive/9a0d25d1513e92f2b0c99d89ab5fc5ae2c061151.zip -> barnowl-9a0d25d1513e92f2b0c99d89ab5fc5ae2c061151.zip
 _eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb	multilib	4fbbbc98f236f1b43acd99476bc3cd85	libtool	241a8f577b9781a42a7421e53448a44e	autotools	2fd69a56a527d12409ba43c733b7ac8f
-_md5_=56a933e10e3ec0a1b3acd576a3ee9b98
+_md5_=b33ff72a25aee526a875e4be65ea2d6d

@@ -1,2 +1,6 @@
-net-im/barnowl 1.10_p20190131-r2: A curses-based IM client
-net-im/zephyr 3.1.2-r1: The Project Athena instant messaging system
+dev-perl/AnyEvent-IRC 0.97-r1: An event based IRC protocol client API
+dev-perl/MIME-Base64-URLSafe 0.01-r1: Perl version of Python's URL-safe base64 codec
+dev-perl/Object-Event 1.23-r1: A class that provides an event callback interface
+dev-perl/Ouch 0.0501: Exceptions that don't hurt
+net-im/barnowl 1.10_p20190131-r3: A curses-based IM client
+net-im/zephyr 3.1.2-r2: The Project Athena instant messaging system

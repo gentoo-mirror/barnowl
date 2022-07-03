@@ -1,0 +1,15 @@
+BDEPEND=dev-lang/perl test? ( virtual/perl-Test-Simple )
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-lang/perl
+DESCRIPTION=Exceptions that don't hurt
+EAPI=8
+HOMEPAGE=https://metacpan.org/release/Ouch
+INHERIT=perl-module
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1+ )
+RDEPEND=dev-lang/perl:=
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	95b2df43c5f3057b6e77bd00b4d953da	readme.gentoo-r1	b776ad4b42f564c406a95c41ccb42c55	perl-module	f2c1b0dd41761ffc8441cd041e4bb7ec
+_md5_=70ff1f6123867bf4a6bf75b414335539

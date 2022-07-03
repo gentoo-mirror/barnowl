@@ -4,7 +4,6 @@
 
 net-im/barnowl:irc - Enable IRC support
 net-im/barnowl:jabber - Enable XMPP support
-net-im/barnowl:twitter - Enable Twitter support
 net-im/barnowl:wordwrap - Install the WordWrap style
 net-im/barnowl:zephyr - Enable zephyr support
 net-im/zephyr:ares - Use net-dns/c-ares in clients
