@@ -11,5 +11,6 @@ LICENSE=|| ( Artistic GPL-1+ )
 RDEPEND=dev-lang/perl:=
 RESTRICT=!test? ( test )
 SLOT=0
+SRC_URI=mirror://cpan/authors/id/K/KA/KAZUHO/MIME-Base64-URLSafe-0.01.tar.gz
 _eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	95b2df43c5f3057b6e77bd00b4d953da	readme.gentoo-r1	b776ad4b42f564c406a95c41ccb42c55	perl-module	f2c1b0dd41761ffc8441cd041e4bb7ec
-_md5_=e6427396f86fc598de185b50d0909e1f
+_md5_=f1367dec11b3de8f300f2fe63172da34
