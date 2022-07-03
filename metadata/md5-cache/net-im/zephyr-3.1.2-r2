@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst
-DEPEND=ares? ( net-dns/c-ares ) app-crypt/mit-krb5 X? ( x11-libs/libX11 ) sys-devel/bison
+DEPEND=ares? ( net-dns/c-ares ) app-crypt/mit-krb5 X? ( x11-libs/libX11 ) sys-libs/libtermcap-compat sys-devel/bison
 DESCRIPTION=The Project Athena instant messaging system
 EAPI=8
 HOMEPAGE=https://github.com/zephyr-im
 IUSE=ares X
 KEYWORDS=~amd64 ~x86
 LICENSE=HPND
-RDEPEND=ares? ( net-dns/c-ares ) app-crypt/mit-krb5 X? ( x11-libs/libX11 )
+RDEPEND=ares? ( net-dns/c-ares ) app-crypt/mit-krb5 X? ( x11-libs/libX11 ) sys-libs/libtermcap-compat
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/zephyr-im/zephyr/archive/release/3.1.2.tar.gz -> zephyr-3.1.2.tar.gz
-_md5_=2eb926f3f1dbc836a97781117ba53d5b
+_md5_=b78abfa14830cd39d5a70711c7ad24a1
