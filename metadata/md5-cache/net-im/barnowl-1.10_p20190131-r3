@@ -11,5 +11,5 @@ LICENSE=Sleepycat LGPL-2
 RDEPEND=dev-lang/perl:= dev-libs/openssl:0= dev-libs/glib:2 sys-libs/ncurses:0= dev-perl/AnyEvent dev-perl/Class-Accessor dev-perl/glib-perl dev-perl/PAR zephyr? ( net-im/zephyr ) jabber? ( dev-perl/Net-DNS dev-perl/Authen-SASL dev-perl/IO-Socket-SSL ) irc? ( dev-perl/AnyEvent-IRC ) wordwrap? ( dev-perl/Text-Autoformat )
 SLOT=0
 SRC_URI=https://github.com/barnowl/barnowl/archive/9a0d25d1513e92f2b0c99d89ab5fc5ae2c061151.zip -> barnowl-9a0d25d1513e92f2b0c99d89ab5fc5ae2c061151.zip
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e6965bfaa00f52cc61e0d4bc44c87b3
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e6965bfaa00f52cc61e0d4bc44c87b3
 _md5_=b33ff72a25aee526a875e4be65ea2d6d
