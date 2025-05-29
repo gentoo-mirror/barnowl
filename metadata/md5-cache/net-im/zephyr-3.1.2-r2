@@ -12,5 +12,5 @@ RDEPEND=ares? ( net-dns/c-ares ) app-crypt/mit-krb5 X? ( x11-libs/libX11 ) sys-l
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/zephyr-im/zephyr/archive/release/3.1.2.tar.gz -> zephyr-3.1.2.tar.gz
-_eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	216128ca9bbff45fbea22427005310c7
+_eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	955b29ccd82c1df4755e5f37748d2fa6
 _md5_=b4e4e1ddf4973620c8dc327199639505
